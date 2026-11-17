@@ -1,0 +1,16 @@
+﻿{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug (build + rodar)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/jogo.exe",
+      "cwd": "${workspaceFolder}",
+      "MIMode": "gdb",
+      "miDebuggerPath": "C:/w64devkit/bin/gdb.exe",
+      "preLaunchTask": "build raylib",
+      "externalConsole": false
+    }
+  ]
+}

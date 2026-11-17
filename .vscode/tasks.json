@@ -1,0 +1,17 @@
+﻿{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build raylib",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-g", "${workspaceFolder}\\*.c", "-o", "${workspaceFolder}\\jogo.exe",
+        "-IC:/raylib/raylib/src", "-LC:/raylib/raylib/src",
+        "-lraylib", "-lopengl32", "-lgdi32", "-lwinmm"
+      ],
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
