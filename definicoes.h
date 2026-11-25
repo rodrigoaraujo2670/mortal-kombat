@@ -35,6 +35,9 @@ typedef struct {
     Texture2D personagens[4];
     int qual_pers;
     Texture2D imagem_escolha;
+    int qual_persAD;
+    int escolheuAD;
+    int escolheu;
 
 }EstadoJogo;
 
