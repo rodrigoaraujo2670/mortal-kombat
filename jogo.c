@@ -1,6 +1,7 @@
 #include "raylib.h"
 #include "definicoes.h"
 #include "jogo.h"
+#include "combate.h"
 
 
 void AtualizarMenu (EstadoJogo *op){
@@ -85,6 +86,7 @@ if (per->qual_pers > 3){
 
 if (per ->escolheu == 1 && per ->escolheuAD == 1){
     per -> tela_ativa = COMBATE;
+    IniciarRound(per);
 }
 }
 
